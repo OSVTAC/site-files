@@ -1,0 +1,34 @@
+From 139906b3c73525fef84985a27b19a6376f802113 Mon Sep 17 00:00:00 2001
+From: Roan Kattouw <roan.kattouw@gmail.com>
+Date: Tue, 10 Oct 2017 00:36:44 -0700
+Subject: [PATCH 3/5] Recommend CC-BY-SA 4.0 for documentation
+
+---
+ index.md | 4 +++-
+ 1 file changed, 3 insertions(+), 1 deletion(-)
+
+diff --git a/index.md b/index.md
+index 7f96e0c..c015cf7 100644
+--- a/index.md
++++ b/index.md
+@@ -1168,7 +1168,8 @@ This section covers topics related to open source.
+ * In addition to the software being open source, project documentation
+   should be openly licensed. This includes things like design documents,
+   installation and setup documents, user manuals, and testing documents.
+-  [TODO: recommend particular licenses for documentation?]
++  The recommended license for documentation is the Creative Commons
++  Attribution-ShareAlike 4.0 license ([CC-BY-SA 4.0][cc-by-sa]).
+ 
+ * [TODO: provide recommendations related to managing community feedback and
+   contributions during project development. Also think about whether
+@@ -1254,6 +1255,7 @@ This section covers topics related to open source.
+ [bos-ordinance-vstf]: files/BOS_Ordinance_268-08_VSTF.pdf
+ [bos-open-source-voting-res]: files/BOS_Resolution_460-14_Open_Source_Voting.pdf
+ [cavo]: http://www.cavo-us.org/index.html
++[cc-by-sa]: https://creativecommons.org/licenses/by-sa/4.0/
+ [cla]: https://en.wikipedia.org/wiki/Contributor_License_Agreement
+ [colorado-rla-home]: http://bcn.boulder.co.us/~neal/elections/corla/
+ [colorado-rla-repo]: https://github.com/FreeAndFair/ColoradoRLA
+-- 
+2.7.4
+

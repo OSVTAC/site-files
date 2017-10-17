@@ -1,0 +1,27 @@
+From 83da39b126a1235be3a39e16684a92fd2e0b9fcf Mon Sep 17 00:00:00 2001
+From: Roan Kattouw <roan.kattouw@gmail.com>
+Date: Tue, 10 Oct 2017 00:36:15 -0700
+Subject: [PATCH 2/5] Add preference for copyleft license
+
+---
+ index.md | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+
+diff --git a/index.md b/index.md
+index 4c173a2..7f96e0c 100644
+--- a/index.md
++++ b/index.md
+@@ -1147,8 +1147,8 @@ gathering or articulating requirements.
+ This section covers topics related to open source.
+ 
+ * Each software component being developed should be licensed under an
+-  [OSI-approved][osi-approved-licenses] software license (see also the
+-  Assumptions section).
++  [OSI-approved][osi-approved-licenses] software license, with a copyleft
++  license being preferred (see also the Assumptions section).
+ 
+ * All software development should occur in public (e.g. on GitHub), rather
+   than, for example, waiting for the software to reach a certain level of
+-- 
+2.7.4
+

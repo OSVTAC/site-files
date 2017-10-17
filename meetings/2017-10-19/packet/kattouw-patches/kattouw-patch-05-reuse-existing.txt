@@ -1,0 +1,31 @@
+From a0d1e3ef76e775749f9b7f646b3e3d0c32410ae9 Mon Sep 17 00:00:00 2001
+From: Roan Kattouw <roan.kattouw@gmail.com>
+Date: Tue, 10 Oct 2017 00:38:09 -0700
+Subject: [PATCH 5/5] Add bullet point about reuse of existing open source
+ software
+
+---
+ index.md | 7 +++++++
+ 1 file changed, 7 insertions(+)
+
+diff --git a/index.md b/index.md
+index d726753..51b7733 100644
+--- a/index.md
++++ b/index.md
+@@ -1168,6 +1168,13 @@ This section covers topics related to open source.
+   For programming languages and build tools, any OSI-approved license
+   should be okay; they need not be copyleft.
+ 
++* Reuse of existing open source libraries, tools and software is encouraged.
++  Any such pre-existing third-party code used should be available under
++  an OSI-approved license, but need not be copyleft. If modifications to
++  third-party code are developed, and the original third-party code has
++  a different license than the main software's license, the modifications
++  should be dual-licensed under both licenses.
++
+ * In addition to the software being open source, project documentation
+   should be openly licensed. This includes things like design documents,
+   installation and setup documents, user manuals, and testing documents.
+-- 
+2.7.4
+
