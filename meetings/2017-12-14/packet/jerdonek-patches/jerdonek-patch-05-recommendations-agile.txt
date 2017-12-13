@@ -1,0 +1,39 @@
+commit 0b833d82a81c9a52a6dc64e3a69edcd078779c22
+Author: Chris Jerdonek <chris.jerdonek@gmail.com>
+Date:   Wed Dec 13 14:17:07 2017 -0800
+
+    Add recommendation related to agile.
+
+diff --git a/_source/recommendations.md b/_source/recommendations.md
+index b40f3d4..101bbb1 100644
+--- a/_source/recommendations.md
++++ b/_source/recommendations.md
+@@ -618,6 +618,15 @@ This section lists some of the requirements the system should satisfy.
+ 
+ ### 4.5. Project Management
+ 
++* The Department should align itself with other efforts within the City to
++  use agile procurement and methods, and it should seek assistance where
++  possible. Notable parts of San Francisco government beginning to use agile
++  methods include the San Francisco [Mayor’s Office of Civic
++  Innovation][sf-moci] (MOCI) and the San Francisco [Digital Services
++  Team][sf-dst]. See also the City's "Digital Services Strategy" [link to PDF
++  found here:
++  <https://digitalservices.sfgov.org/assets/SF_DigitalServiceStrategy.pdf>].
++
+ * The Department should hire a staff person to be in charge of managing the
+   project. The person should have experience and expertise in managing
+   technical projects of a similar size and complexity.
+diff --git a/_source/reference-links.md b/_source/reference-links.md
+index 097ac33..4da57c3 100644
+--- a/_source/reference-links.md
++++ b/_source/reference-links.md
+@@ -62,6 +62,8 @@
+ [proposed-budget-2016]: files/SF_Mayor_Proposed_Budget_2016-18.pdf
+ [rfp-business-case-pdf]: files/SF_Business_Case_RFP_FINAL.pdf
+ [sf-digital-services]: https://digitalservices.sfgov.org/
++[sf-dst]: https://digitalservices.sfgov.org/
++[sf-moci]: http://www.innovation.sfgov.org/
+ [slalom-contract-appendix-a]: files/slalom/contract/Business_Case_Appendix_A.pdf
+ [slalom-contract-appendix-b]: files/slalom/contract/Business_Case_Appendix_B.pdf
+ [slalom-contract]: files/slalom/contract/Business_Case_Contract.pdf

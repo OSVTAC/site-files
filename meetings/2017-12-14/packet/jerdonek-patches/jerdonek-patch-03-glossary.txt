@@ -1,0 +1,29 @@
+commit b97e048fd997db092e7c60b10e80cac4cbf959b1
+Author: Chris Jerdonek <chris.jerdonek@gmail.com>
+Date:   Tue Dec 12 12:36:19 2017 -0800
+
+    Add a few more software terms.
+
+diff --git a/_source/glossary.md b/_source/glossary.md
+index abbd13b..f7be8a1 100644
+--- a/_source/glossary.md
++++ b/_source/glossary.md
+@@ -53,6 +53,8 @@
+ 
+ * **open-source software**. [TODO]
+ 
++* **operating system**. [TODO]
++
+ * **outstack**. [TODO]
+ 
+ * **precinct ballot scanner**. [TODO]
+@@ -68,3 +70,9 @@
+ * **software application**. [TODO]
+ 
+ * **software library**. [TODO]
++
++* **software service**. [TODO]
++
++* **software stack**. [TODO]
++
++* **stack**. See ”software stack.”
