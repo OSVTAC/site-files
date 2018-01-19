@@ -1,0 +1,37 @@
+Summary of proposed changes to the SFOSVTAC recommendations:
+Carl Hage 1/17/2018
+
+Added some glossary entries for "Remote Accessible Vote By Mail"
+(summary of the legal definition - required by 2020), and "Paper CVR"
+legal definition of printout with voter choices listed. In hardware
+and software components, referenced vote by mail in accessible devices.
+
+Some new/added links:
+ - Other Open Source Voting Projects and Research:
+   - pvote, votebox projects
+   - research papers on user interfaces
+ - OSET TrustTheVote VoteStream election results prototype
+ - Usenix paper on OVC describing COTS-based voting system
+ - California Election Laws and Regulations section
+ 
+Proposed new Possible First Components topics:
++6. Ballot Batch Management (Software)
++7. Audit Support (Software)
+[See descriptions in the diffs. Ballot batch management is just
+something that needs to be thought out to support the scanner and
+totaler. If the first steps are used as an audit, then some
+supporting sotware might be needed (could be Colorado-RLA).]
+
+- noted possible use with accessible vote-by-mail of open picture
+  interpreter to verify home-scanned ballots.
+  
+- added explicit computer-readable outputs produced by results reporters.
+
+- added notes to ballot picture interpreter: use case for remote
+  accessible vote by mail. Added requirements to identify extraneous
+  and ambiguous marks requiring adjudication. Added note to be
+  able to scan header/footer marking pages enclosing a ballot batch.
+
+
+
+
