@@ -1,0 +1,89 @@
+From ead612c96e752c9671fae03ef2e4df4694ce86f8 Mon Sep 17 00:00:00 2001
+From: Carl Hage <ch@carlhage.com>
+Date: Thu, 1 Feb 2018 14:40:41 -0800
+Subject: [PATCH 9/9] Add documentation, set UTF-8 for file IO
+
+---
+ _scripts/build.py | 31 +++++++++++++++++++++++++++----
+ 1 file changed, 27 insertions(+), 4 deletions(-)
+
+diff --git a/_scripts/build.py b/_scripts/build.py
+index 92884d8..c51b84d 100644
+--- a/_scripts/build.py
++++ b/_scripts/build.py
+@@ -42,6 +42,25 @@ For command help, including command-line options:
+     $ python _scripts/build.py -h
+ 
+ The script requires Python 3.5 or higher.
++
++Detailed Description:
++
++1. The file "last-posted.txt" is written with the --posted-date or todays
++   date in a human-friendly format, e.g. April 1, 2018.
++
++2. The _source/scripts/prep.py is run to update sequence numbers in the
++   source pages (sections), and return a json-formatted list of headers plus the
++   list of section names and last approved date.
++
++3. Creates a standard page header with title, approval, and last posted date.
++   Creates a standard page footer with _source/snippets/license-info.
++   The footer includes a copy of all references.
++
++4. For each section .md file, creates a copy of the file in the top-level
++   site directory with a standard page header and footer added.
++
++5. An index page with the intro.md file, auto-generated table of contents
++   page is created, then a combined single page .md file is created.
+ """
+ 
+ 
+@@ -79,6 +98,10 @@ TOC_LINK = """\
+ SINGLE_PAGE_LINK = """\
+ * [Single-page version](single-page) (long, can be used for printing)"""
+ 
++# All files use UTF-8, no matter what locale settings are (e.g. LC_ALL=C)
++# Some python libraries default to ASCII even with LANG=en_US.UTF-8
++ENCODING = 'utf-8'
++
+ 
+ def get_submodule_sha(repo_dir, submodule):
+     """
+@@ -92,7 +115,7 @@ def get_submodule_sha(repo_dir, submodule):
+     args = cmd.split()
+     args.append(str(submodule))
+     proc = subprocess.run(args, stdout=subprocess.PIPE, cwd=str(repo_dir))
+-    stdout = proc.stdout.decode('utf-8')
++    stdout = proc.stdout.decode(ENCODING)
+     # The output can look like this, for example:
+     # "-72bfdd96151561bbbb6dc834ef38a5cf5cf6031d files"
+     parts = stdout.split()
+@@ -113,7 +136,7 @@ def get_source_path(name):
+ def write_file(text, path):
+     path = Path(path)
+     _log.info('writing file: {}'.format(path))
+-    path.write_text(text)
++    path.write_text(text,encoding=ENCODING)
+ 
+ 
+ def write_sections(sections, name):
+@@ -131,7 +154,7 @@ def read_source_file(name):
+     Read a Markdown file in the _source directory.
+     """
+     path = get_source_path(name)
+-    text = path.read_text()
++    text = path.read_text(encoding=ENCODING)
+ 
+     return text
+ 
+@@ -397,7 +420,7 @@ def main():
+     result = run_prep()
+     header_infos, last_approved, section_names, sections = result
+ 
+-    posted_date = LAST_POSTED_PATH.read_text()
++    posted_date = LAST_POSTED_PATH.read_text(encoding=ENCODING)
+     page_intro = make_page_intro(last_approved, posted_date=posted_date)
+     reference_links = read_source_file('reference-links')
+     # The html in the following file was copied from the instructions on
+-- 
+2.7.4
+
