@@ -1,0 +1,35 @@
+From c66f76af4ec4781d9c2ba739417ba3cdc8e370a6 Mon Sep 17 00:00:00 2001
+From: Roan Kattouw <roan.kattouw@gmail.com>
+Date: Sat, 2 Jun 2018 23:54:23 -0700
+Subject: [PATCH] Expand cons of ballot marking devices
+
+---
+ pages/decisions.md | 11 ++++++++---
+ 1 file changed, 8 insertions(+), 3 deletions(-)
+
+diff --git a/pages/decisions.md b/pages/decisions.md
+index 29f3141..e1dfc5b 100644
+--- a/pages/decisions.md
++++ b/pages/decisions.md
+@@ -152,10 +152,15 @@ Machines used by all non-mail voters Pros:
+ stored electronic CVRs and end of day totals available.
+ 
+ Machines used by all non-mail voters Cons:
+-* Requires more equipment, with increased cost, complexity, and the possibility
+-    of something going wrong. May require backup power.
++* Requires more equipment and more software, with increased cost, complexity,
++    attack surface, and the possibility of something going wrong. May require
++    backup power.
+ * More possible problems with paper jams and printer malfunction.
+-* Voters need to be occupying a machine while voting.
++* It is difficult for voters to remember and verify all of their selections
++    accurately when there are many contests on the ballot; in the November 2016
++    election, there were 52 contests.
++* Voters need to be occupying a machine while voting, unless a vote-at-home app
++    is used.
+ * Mail ballot processing is still a separate sizable operation.
+ 
+ _[Question & answer edited: Feb. 8, 2018 meeting.]_
+-- 
+2.17.0
+

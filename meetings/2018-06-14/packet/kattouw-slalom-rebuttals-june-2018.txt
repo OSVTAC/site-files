@@ -1,0 +1,71 @@
+Section 2.1.4 says that the City should consider whether it wants to commit to building and managing
+an open source community around the project. This is a good point, and growing a community would be
+beneficial, although it wouldn't necessary. I would suggest only starting any such efforts after the
+main development effort has finished, leaving sole responsibility for the initial development with
+a contractor. After the initial system is finished, the City would have to decide to either maintain
+the official fork of the project, or be a consumer of an official fork maintained by some other party.
+If it decides the former, it would be taking ongoing responsibility for the project and the community
+around it, but it wouldn't necessarily have to do that with its own staff: there are consultancies
+with experience in open source project and community management that the City could contract with.
+If it decides the latter, the City would have to periodically decide whether to follow the official
+fork of the software, or use a version that is older or has custom modifications
+
+Section 2.1.5 makes it sound like incremental certification (including certification of a partial
+system) is something completely new that has never been done before, with San Francisco having
+to break new ground, implying a lot of risk. However, Los Angeles County's VSAP project has
+submitted a partial system for certification to the Secretary of State, so this ground is already
+being broken, and by the time San Francisco needs to do it, it likely won't be risky or strange
+anymore.
+
+Section 2.1.6 casts doubt on the suitability of GPLv3 for government software, and mentions the
+licenses that OSET designed specifically for government. However, it does not mention that
+ColoradoRLA, an auditing software project recently (2017) developed for the state of Colorado,
+is under GPLv3. No issues with the license were reported during that project, and Slalom does not
+seem to have spoken to anyone involved in this project to ask if Colorado encountered any issues
+with the license or why they chose GPLv3. Prime III, the software used in New Hampshire for
+accessible voting, is also under GPLv3. Like much of the open source community, I am very
+skeptical of license proliferation. GPLv3 (and v2 before it) has been used for a very large number
+of software projects, so to me it seems less risky to use a proven license than the more obscure
+OSET licenses.
+
+Further, the report assumes that the City will own the copyright to the software (as is also my
+recommendation: each vendor should be required to assign copyright to the City). In that case,
+the license of the software only restricts what other parties can do with the software; the City, as
+the copyright owner, is not restricted by its own copyright. Only once the City incorporates changes
+to the software authored by others would the terms of the license become relevant. This should still
+happen, and the City Attorney's office should be asked to give input on how they recommend copyright
+and licensing be handled, but the initial development of the system would bring fewer
+license-related concerns than a typical proprietary software project where the City is subject to
+the terms of a license for software whose copyright is owned by a vendor.
+
+Section 4 suggests six delivery options. The first two, where one or more City departments do all
+the work, are obviously unrealistic and do not seem to have been planned or anticipated by anyone.
+It has been assumed throughout that a vendor would be commissioned to develop the project. The
+fourth option talks about "existing assets", but its consideration seems limited to existing
+proprietary assets of a vendor. Existing open source software does not seem to have been considered.
+This is especially strange since other governments are using open source software for some of their
+election processes already, with Prime III being used for accessible ballot marking in New Hampshire
+and ColoradoRLA being used for audits in Colorado. A vendor could take these projects as a starting
+point for the accessible voting and auditing components of this project and build on them, saving
+time, effort and money. This does not seem to have been considered by Slalom, as the report does not
+mention Prime III or ColoradoRLA at all, and assigns almost half of its cost estimate to the
+accessible voting component, despite that being the one component where an open source solution
+is already used by real voters today.
+
+Section 5 breaks out the cost estimates, with only the "baseline" option of vendor development
+without existing assets being broken out (5.2.1), and only top-line numbers presented for the other
+options (5.2.2). In the breakdown in 5.2.1, the vote reporting system is estimated to be almost
+exactly the same cost as the vote tabulator system, and only slightly less expensive than the
+central and precinct ballot counting systems, which runs counter to my intuition that results
+reporting is a much simpler component, especially compared to counting systems. Where these
+puzzling estimates come from is not explained.
+
+In section 5.2.3, Los Angeles County's project is used as a benchmark for hardware costs for
+accessible voting; this makes it more puzzling that New Hampshire's roll-out of Prime III (for the
+February 2016 primary) was not looked at. This section also conflates the costs of doubling the
+number of accessible voting devices with the costs of the open source voting project.
+
+Section 5.4 calls out which costs are the same with or without the project, but sections 5.2.3 and
+5.3 don't, even though there are line items there that would be unchanged or would only be changed
+slightly from current costs. An overview of cost differences compared to the present day would have
+been more helpful than this list of future costs with nothing to compare them to.
