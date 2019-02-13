@@ -1,0 +1,36 @@
+From e50b775b92713adbe420a98a31c4a8ea8b4a4aa5 Mon Sep 17 00:00:00 2001
+From: Roan Kattouw <roan.kattouw@gmail.com>
+Date: Mon, 11 Feb 2019 10:55:53 -0800
+Subject: [PATCH] Add reference to ballot verification paper
+
+---
+ pages/decisions.md | 2 ++
+ reference-links.md | 1 +
+ 2 files changed, 3 insertions(+)
+
+diff --git a/pages/decisions.md b/pages/decisions.md
+index 54b4d6c..e2211a7 100644
+--- a/pages/decisions.md
++++ b/pages/decisions.md
+@@ -162,6 +162,8 @@ Machines used by all non-mail voters Cons:
+ * It is difficult for voters to accurately verify their machine-printed ballot,
+     especially when there are many contests on the ballot. For example, in the
+     November 2016 election, there were 52 contests.
++    A [2018 paper][ballot-verification-2018-paper] suggests voters struggle
++    with much smaller ballots than that.
+ * Voters need to be occupying a machine while voting, unless a vote-at-home app
+     is used.
+ * Mail ballot processing is still a separate sizable operation.
+diff --git a/reference-links.md b/reference-links.md
+index 6a40827..11cb8b1 100644
+--- a/reference-links.md
++++ b/reference-links.md
+@@ -1,4 +1,5 @@
+ [18f-modular-contracting]: https://modularcontracting.18f.gov/
++[ballot-verification-2018-paper]: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3292208
+ [bill-ab-2252-2015]: https://leginfo.legislature.ca.gov/faces/billNavClient.xhtml?bill_id=201520160AB2252
+ [bill-sb-360-2013]: https://leginfo.legislature.ca.gov/faces/billNavClient.xhtml?bill_id=201320140SB360
+ [bill-sb-450-2015]: https://leginfo.legislature.ca.gov/faces/billNavClient.xhtml?bill_id=201520160SB450
+-- 
+2.17.1
+
