@@ -1,0 +1,43 @@
+From f9b8e70d20266f091ef0949af0750cd3ced6cdca Mon Sep 17 00:00:00 2001
+From: Roan Kattouw <roan.kattouw@gmail.com>
+Date: Mon, 11 Feb 2019 15:56:25 -0800
+Subject: [PATCH] Add paragraph about South Carolina publishing CVR data
+
+---
+ pages/decisions.md | 5 +++++
+ reference-links.md | 3 +++
+ 2 files changed, 8 insertions(+)
+
+diff --git a/pages/decisions.md b/pages/decisions.md
+index 54b4d6c..9df79b5 100644
+--- a/pages/decisions.md
++++ b/pages/decisions.md
+@@ -519,6 +519,11 @@ to it?
+ Ranked Choice Voting (RCV) might require a public set of cast vote records (CVR)
+ to fully disclose voter choices and validate the elimination rounds.
+ 
++South Carolina publishes CVRs as part of its [election audit process][south-carolina-audits].
++This data has been [republished in alternate formats][south-carolina-json] by
++interested members of the public, and been used by political scientists to
++[research voting patterns][south-carolina-poster].
++
+ _[Question added: Feb. 8, 2018 meeting.]_
+ 
+ 
+diff --git a/reference-links.md b/reference-links.md
+index 6a40827..c72e0f5 100644
+--- a/reference-links.md
++++ b/reference-links.md
+@@ -86,6 +86,9 @@
+ [slalom-contract]: files/slalom/contract/Business_Case_Contract.pdf
+ [sos-advisories]: http://www.sos.ca.gov/elections/advisories-county-elections-officials/
+ [sos-digest]: http://www.sos.ca.gov/elections/publications-and-resources/elections-officers-digest-2018/
++[south-carolina-audits]: https://www.scvotes.org/election-audits-south-carolina
++[south-carolina-json]: https://github.com/hodgesmr/south_carolina_2018_ballot_image_json
++[south-carolina-poster]: http://www.shirokuriwaki.com/papers/kuriwaki_scvotes.pdf
+ [slalom-rfp-response]: files/slalom/REG_RFP_2017-01_Slalom_Response.pdf
+ [star-vote-entity]: files/star-vote/STAR-Vote_Statement_of_Intent.pdf
+ [star-vote-final-press-release]: http://www.traviscountyclerk.org/eclerk/Content.do?code=star-vote-a-change-of-plans
+-- 
+2.17.1
+
